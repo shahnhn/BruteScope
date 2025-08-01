@@ -1,0 +1,147 @@
+/* Reset & base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #0d0d0d;
+    color: #ccc;
+    font-family: 'Fira Code', monospace;
+  }
+  
+  /* Log container */
+  .log-container {
+    background: linear-gradient(145deg, #121212, #1c1c1c);
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 95%;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0, 255, 0, 0.2);
+  }
+  
+  /* Headings */
+  h1 {
+    color: #00ff00;
+    margin-bottom: 10px;
+    font-size: 28px;
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.4);
+  }
+  
+  .subtitle {
+    color: #888;
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-style: italic;
+  }
+  
+  /* Table */
+  .log-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #ccc;
+    table-layout: fixed;
+  }
+  
+  .log-table th {
+    background: #111;
+    color: #00ff00;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    padding: 10px 6px;
+  }
+  
+  .log-table th:first-child {
+    border-top-left-radius: 6px;
+  }
+  .log-table th:last-child {
+    border-top-right-radius: 6px;
+  }
+  
+  .log-table td {
+    padding: 10px 6px;
+    border: 1px solid #333;
+    word-wrap: break-word;
+  }
+  
+  /* Column alignment & widths */
+  .log-table td:nth-child(1),
+  .log-table th:nth-child(1) {
+    text-align: center;
+    width: 50px;
+  }
+  
+  .log-table td:nth-child(2),
+  .log-table th:nth-child(2),
+  .log-table td:nth-child(3),
+  .log-table th:nth-child(3),
+  .log-table td:nth-child(4),
+  .log-table th:nth-child(4) {
+    text-align: left;
+    width: 120px;
+  }
+  
+  .log-table td:nth-child(5),
+  .log-table th:nth-child(5) {
+    text-align: center;
+    width: 80px;
+  }
+  
+  .log-table td:nth-child(6),
+  .log-table th:nth-child(6) {
+    text-align: center;
+    width: 160px;
+  }
+  
+  /* Row hover effect */
+  .log-table tbody tr:hover {
+    background: rgba(0, 255, 0, 0.05);
+  }
+  
+  /* Success & fail rows */
+  .success-row {
+    background: rgba(0, 128, 0, 0.2);
+  }
+  
+  .fail-row {
+    background: rgba(128, 0, 0, 0.2);
+  }
+  
+  /* Status cell badge */
+  .log-table td:nth-child(5) {
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  .success-row td:nth-child(5) {
+    color: #00ff00;
+  }
+  
+  .fail-row td:nth-child(5) {
+    color: #ff4c4c;
+  }
+  
+  /* Back button */
+  .back-btn {
+    margin-top: 25px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+    background: #00ff00;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .back-btn:hover {
+    background: #33ff33;
+    transform: scale(1.05);
+  }
+  
